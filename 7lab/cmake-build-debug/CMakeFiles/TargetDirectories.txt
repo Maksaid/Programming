@@ -1,3 +1,0 @@
-C:/Users/maksaid1972/CLionProjects/lab7/cmake-build-debug/CMakeFiles/lab7.dir
-C:/Users/maksaid1972/CLionProjects/lab7/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/maksaid1972/CLionProjects/lab7/cmake-build-debug/CMakeFiles/rebuild_cache.dir
