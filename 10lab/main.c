@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <math.h>
-
+float fillarray(float *pointcoords,int n){
+    for (int i = 0; i < n; ++i){
+        for (int j = 0; j < n; ++j) {
+            pointdistance[i][j] = count_distances(pointcoords[i][0],pointcoords[i][1],pointcoords[j][0],pointcoords[j][1]);
+        }
+    }
+}
 float count_distances(float x1,float y1,float x2,float y2){
     return sqrtf((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
 }
@@ -25,11 +31,11 @@ int main() {
         scanf("%f %f", &pointcoords[i][0], &pointcoords[i][1]);
     }
     float pointdistance[n][n];
+    fillarray(&pointcoords,n);
     for (int i = 0; i < n; ++i){
         for (int j = 0; j < n; ++j) {
             pointdistance[i][j] = count_distances(pointcoords[i][0],pointcoords[i][1],pointcoords[j][0],pointcoords[j][1]);
         }
-
 }
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
